@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" ng-app="myApp">
   <head>
+
     <meta charset="utf-8">
     <title> A dummy HTML file </title>
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="app.js">
+
+    </script>
   </head>
   <body>
-    <section>
-      <option value="hello"> hello</option>
+    <section ng-controller="rtCtrl">
+      <option value="hello">{{hello}}</option>
       <option value="world"> world!</option>
     </section>
 
